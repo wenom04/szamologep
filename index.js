@@ -17,6 +17,11 @@ function Kiszamol(){
         if (input.includes('%')) {
             input = input.replace(/%/g, '/100');
         }
+        if (/\/0/.test(input)) {
+            kijelzo.value = 'Hiba';
+            window.location.href = 'index2.html';
+            return;
+        }
         kijelzo.value = eval(input);
     } catch (error) {
         kijelzo.value = 'Hiba';
