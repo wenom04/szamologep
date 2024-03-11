@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    background-color: hsl(0, 1%, 30%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+button:hover{
+    background-color: hsl(0, 1%, 40%);
+}
+button:active{
+    background-color: hsl(0, 1%, 50%);
+}
+#gombok{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap : 10px;
+    padding : 25px;
+}
+
+#szamologep{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 5%);
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#kijelzo{
+    background-color: hsl(0, 0%, 10%);
+    width: 100%;
+    color: white;
+    font-size: 80px;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+}
+
+.torlo{
+    background-color : orange;
+}
+.BS{
+    background-color : red;
+}
+.egyenlo{
+    background-color : hsl(221, 76%, 50%);
+}
+.operandus{
+    background-color : hsl(0, 0%, 20%);
+}
+
+.torlo:hover{
+    background-color : hsl(39, 100%, 60%);
+}
+.BS:hover{
+    background-color : hsl(0, 100%, 60%);
+}
+.egyenlo:hover{
+    background-color : hsl(221, 76%, 65%)
+}
+.operandus:hover{
+    background-color : hsl(0, 0%, 40%);
+}
+
+.torlo:active{
+    background-color : hsl(39, 100%, 70%);
+}
+.BS:active{
+    background-color : hsl(0, 100%, 70%);
+}
+.egyenlo:active{
+    background-color : hsl(221, 76%, 75%)
+}
+.operandus:active{
+    background-color : hsl(0, 0%, 60%);
+}

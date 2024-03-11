@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Számológép</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id = "szamologep">
+        <input id= "kijelzo" readonly>
+        <div id = "gombok">
+            <button onclick="TorliAKijelzot()" class ="torlo">C</button>
+            <button onclick="KiirAKijelzore('/')" class = "operandus">/</button>
+            <button onclick="KiirAKijelzore('*')" class = "operandus">*</button>
+            <button onclick="Backspace()" class = "BS">BS</button>
+            <button onclick="KiirAKijelzore(7)">7</button>
+            <button onclick="KiirAKijelzore(8)">8</button>
+            <button onclick="KiirAKijelzore(9)">9</button>
+            <button onclick="KiirAKijelzore('-')" class = "operandus">-</button>
+            <button onclick="KiirAKijelzore(4)">4</button>
+            <button onclick="KiirAKijelzore(5)">5</button>
+            <button onclick="KiirAKijelzore(6)">6</button>
+            <button onclick="KiirAKijelzore('+')" class = "operandus">+</button>
+            <button onclick="KiirAKijelzore(1)">1</button>
+            <button onclick="KiirAKijelzore(2)">2</button>
+            <button onclick="KiirAKijelzore(3)">3</button>
+            <button onclick="Kiszamol()" class = "egyenlo">=</button>
+            <button onclick="KiirAKijelzore('%')" class = "operandus">%</button>
+            <button onclick="KiirAKijelzore(0)">0</button>
+            <button onclick="KiirAKijelzore('.')" class = "operandus">.</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
